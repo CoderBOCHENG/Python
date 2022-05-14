@@ -29,13 +29,13 @@ class Config:
 
     SCREEN = pygame.display.set_mode((SCREEN_LENGTH, SCREEN_HEIGHT))
 
-    FONT = pygame.font.Font('python_0390_pygame_flappy_bird_font.TTF', 40)
+    FONT = pygame.font.Font('pygame_flappy_bird_font.TTF', 40)
     COLOR_WHITE = (255, 255, 255)
 
 class Background:
 
     def __init__(self):
-        self.background_surface = pygame.image.load('python_0390_pygame_flappy_bird_background.png').convert()
+        self.background_surface = pygame.image.load('pygame_flappy_bird_background.png').convert()
         self.background_surface = pygame.transform.scale2x(self.background_surface)
 
     def show(self):
@@ -45,7 +45,7 @@ class Background:
 class Floor:
 
     def __init__(self):
-        self.floor_surface = pygame.image.load('python_0390_pygame_flappy_bird_base.png').convert()
+        self.floor_surface = pygame.image.load('pygame_flappy_bird_base.png').convert()
         self.floor_surface = pygame.transform.scale2x(self.floor_surface)
         self.floor_x = 0
 
@@ -62,12 +62,12 @@ class Bird:
 
     def __init__(self):
 
-        # self.bird_surface = pygame.image.load("python_0390_pygame_flappy_bird_bird2.png").convert_alpha()
+        # self.bird_surface = pygame.image.load("pygame_flappy_bird_bird2.png").convert_alpha()
         # self.bird_surface = pygame.transform.scale2x(self.bird_surface)
 
-        self.bird_surface_up = pygame.transform.scale2x(pygame.image.load("python_0390_pygame_flappy_bird_bird-upflap.png").convert_alpha())
-        self.bird_surface_mid = pygame.transform.scale2x(pygame.image.load("python_0390_pygame_flappy_bird_bird-midflap.png").convert_alpha())
-        self.bird_surface_down = pygame.transform.scale2x(pygame.image.load("python_0390_pygame_flappy_bird_bird-downflap.png").convert_alpha())
+        self.bird_surface_up = pygame.transform.scale2x(pygame.image.load("pygame_flappy_bird_bird-upflap.png").convert_alpha())
+        self.bird_surface_mid = pygame.transform.scale2x(pygame.image.load("pygame_flappy_bird_bird-midflap.png").convert_alpha())
+        self.bird_surface_down = pygame.transform.scale2x(pygame.image.load("pygame_flappy_bird_bird-downflap.png").convert_alpha())
         self.bird_frames = [self.bird_surface_up, self.bird_surface_mid, self.bird_surface_down]
         self.bird_surface_index = 0
 
@@ -115,7 +115,7 @@ class Bird:
 
 class Pipe:
 
-    bottom_pipe_surface = pygame.image.load("python_0390_pygame_flappy_bird_pipe.png").convert()
+    bottom_pipe_surface = pygame.image.load("pygame_flappy_bird_pipe.png").convert()
     bottom_pipe_surface = pygame.transform.scale2x(bottom_pipe_surface)
 
     top_pipe_surface = pygame.transform.flip(bottom_pipe_surface, False, True)
