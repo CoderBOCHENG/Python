@@ -12,9 +12,3 @@ while True:
         print('Error! ')
         time.sleep(5)
 
-
-'''
-HOMEWORK:
-1) Play with dataFrame:  data
-2) Store the data into your database, and run some sqls against it. 
-'''
