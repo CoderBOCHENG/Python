@@ -47,12 +47,6 @@ def get_by_id(connection, id):
         s = stock(*tup)
         return s
 
-'''
-HOMEWORK:
-Implement below 2 methods:
-1) you need to add 2 sqls in the front of the files. Please revise 480
-2) You need to mimic function get_by_id() to implement these 2 methods.
-'''
 
 def get_by_ticker(connection, ticker):
     pass
@@ -67,7 +61,7 @@ def get_by_name(connection, name):
 def print_menu():
     menu = '''
     --------------------------
-    Please give me a int value:
+     a int value:
     1) get all stocks
     2) get stock by id
     3) get stock by ticker
@@ -76,10 +70,6 @@ def print_menu():
     print(menu)
 
 
-'''
-HOMEWORK2:
-Finish my half-done code below
-'''
 
 if __name__ == "__main__":
 
